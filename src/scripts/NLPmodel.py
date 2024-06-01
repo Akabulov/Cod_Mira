@@ -22,13 +22,14 @@ resumes_train, resumes_test, parameters_train, parameters_test = train_test_spli
 vectorizer = keras.layers.TextVectorization(max_tokens=10000, output_sequence_length=500)
 vectorizer.adapt(resumes_train)
 
+num_parameters = 2
 
 model = Sequential()
 model.add(TextVectorization(max_tokens=10000, output_sequence_length=500))
 model.add(Embedding(input_dim=10000, output_dim=128))
 model.add(LSTM(128))
 model.add(Dense(64, activation='relu'))
-model.add(Dense(num_parameters, activation='softmax')) # num_parameters is the number of parameters you're interested in
+model.add(Dense(num_parameters, activation='softmax'))
 
 
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
