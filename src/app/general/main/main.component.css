@@ -1,0 +1,168 @@
+main {
+    padding: 20px;
+
+    /* display: flex; */
+}
+
+h1 {
+    text-align: center;
+}
+
+main div {
+    /* margin: auto; */
+}
+
+main h3 {
+    text-align: center;
+}
+
+.filters {
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: auto auto 50px auto;
+    padding: 20px 30px;
+}
+
+.positive, .negative {
+    display: flex;
+}
+
+
+.chosens {
+    min-width: 200px;
+    border-radius: 10px;
+
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 0 0;
+
+    overflow-y: scroll;
+    height: 220px;
+}
+
+main .tags {
+    margin: auto 10px auto auto;
+}
+
+main .select {
+    margin: auto;
+}
+
+.tags .tag {
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    background: rgba(12, 164, 252, 0.363);
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+    
+
+    transition: all .2s linear;
+}
+
+.tags .tag:hover {
+    opacity: 0.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.tags input {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 10px 0 10px 10px;
+    border-radius: 10px 0 0 10px;
+}
+.tags button {
+    font-size: 16px;
+    padding: 5px 10px;
+    /* padding: 5px; */
+ 
+    color: white;
+    border-radius: 0 10px 10px 0;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+
+
+.tags button:hover {
+    opacity: 0.7;
+}
+
+.tag-block {
+    display: flex;
+}
+
+.positive-block, .negative-block {
+    margin: auto;
+}
+
+.chosens span {
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+}
+
+.chosens .delete {
+    cursor: pointer;
+    transition: all .2s linear;
+
+}
+
+.positive .chosens span {
+    background: rgba(47, 255, 57, 0.5);
+}
+.positive .tags button {
+    border: 2px solid green;
+    background: green;
+}
+
+.negative .chosens span {
+    background: rgba(255, 0, 0, 0.534);
+
+}
+.negative .tags button {
+    border: 2px solid red;
+    background: red;
+}
+
+
+
+.delete:hover {
+    color: red;
+
+    /* opacity: 0.7; */
+}
+
+.select {
+    display: flex;
+    flex-direction: column;
+}
+
+.select button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 14px;
+    border: 2px solid rgba(12, 164, 252, 0.363);
+
+    cursor: pointer;
+    transition: all .2s linear;
+
+    margin: auto;
+}
+
+.select button:hover {
+    background: rgba(15, 154, 235, 0.897);
+}
+
+.select select {
+    font-size: 20px;
+    padding: 5px 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
